@@ -12,6 +12,8 @@
 		C0C9CFAF204F91410087452D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0C9CFAD204F91410087452D /* Main.storyboard */; };
 		C0C9CFB1204F91410087452D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0C9CFB0204F91410087452D /* Assets.xcassets */; };
 		C0C9CFB4204F91410087452D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0C9CFB2204F91410087452D /* LaunchScreen.storyboard */; };
+		C0C9CFBC204F91E10087452D /* CameraIcon32x32.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C0C9CFBB204F91E10087452D /* CameraIcon32x32.jpeg */; };
+		C0C9CFBE204FC3230087452D /* WhiteCameraIcon32x32.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C0C9CFBD204FC3230087452D /* WhiteCameraIcon32x32.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		C0C9CFB0204F91410087452D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0C9CFB3204F91410087452D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0C9CFB5204F91410087452D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0C9CFBB204F91E10087452D /* CameraIcon32x32.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CameraIcon32x32.jpeg; sourceTree = "<group>"; };
+		C0C9CFBD204FC3230087452D /* WhiteCameraIcon32x32.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhiteCameraIcon32x32.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 		C0C9CFA8204F91410087452D /* camera4GGA_AVF1 */ = {
 			isa = PBXGroup;
 			children = (
+				C0C9CFBB204F91E10087452D /* CameraIcon32x32.jpeg */,
+				C0C9CFBD204FC3230087452D /* WhiteCameraIcon32x32.jpg */,
 				C0C9CFA9204F91410087452D /* AppDelegate.swift */,
 				C0C9CFAB204F91410087452D /* ViewController.swift */,
 				C0C9CFAD204F91410087452D /* Main.storyboard */,
@@ -123,6 +129,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0C9CFBE204FC3230087452D /* WhiteCameraIcon32x32.jpg in Resources */,
+				C0C9CFBC204F91E10087452D /* CameraIcon32x32.jpeg in Resources */,
 				C0C9CFB4204F91410087452D /* LaunchScreen.storyboard in Resources */,
 				C0C9CFB1204F91410087452D /* Assets.xcassets in Resources */,
 				C0C9CFAF204F91410087452D /* Main.storyboard in Resources */,
