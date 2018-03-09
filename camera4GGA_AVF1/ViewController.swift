@@ -11,12 +11,12 @@ import AVFoundation
 import Photos
 
 class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
-  
+
   //カメラセッション
   var captureSession: AVCaptureSession?
   var capturePhotoOutput: AVCapturePhotoOutput?
   var previewLayer: AVCaptureVideoPreviewLayer?
-  @objc var captureDevice: AVCaptureDevice?
+  var captureDevice: AVCaptureDevice?
   
   @IBOutlet var preView: UIView!
  
@@ -30,7 +30,7 @@ class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
     self.capturePhotoOutput?.capturePhoto(with: photoSettings, delegate: self)
   }
   
-  //撮影した写真をviewに表示
+  //写真をviewに表示
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -47,6 +47,18 @@ class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
     self.previewLayer?.connection?.videoOrientation = AVCaptureVideoOrientation.portrait
     self.preView.layer.addSublayer(self.previewLayer!)
     self.captureSession?.startRunning()
+  }
+  
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+  }
+  
+  override func viewWillDisappear(_ animated: Bool) {
+    super.viewWillDisappear(animated)
+  }
+  
+  override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
   }
   
   @IBOutlet weak var isoSlider: UISlider!
@@ -100,6 +112,8 @@ class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
     }
     
     //ホワイトバランスリセットの処理
+    //【問題点】ここがOutletもActionも設定できない。
+    //本当は@IBAction func resetWBTappedAction(_ sender: Any) {にしたい。
     func resetWBTappedAction(_ sender: Any) {
       func resetWB(sender: UIButton){
         let resetWB = AVCaptureDevice.default(for: .video)
@@ -138,6 +152,7 @@ class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
       }
       
       //保存した結果をアラートで表示
+      //【問題点】写真が自動で保存されてしまう。アラートが起動しない。
       func showResultOfSaveImage(_image: UIImage, didFinishSavingWithError error: NSError!, contextInfo: UnsafeMutableRawPointer){
         var title = "保存完了"
         var message = "カメラロールに保存しました"
