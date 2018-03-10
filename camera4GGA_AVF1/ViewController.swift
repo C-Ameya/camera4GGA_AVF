@@ -102,6 +102,8 @@ class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
         g.redGain = 4.0
         
         wbSetting?.setWhiteBalanceModeLocked(with: g, completionHandler: nil )
+        //unlockを追加
+        wbSetting?.unlockForConfiguration()
       } catch {
         let alertController = UIAlertController(title: "Cheak", message: "False !!", preferredStyle: .alert)
         
