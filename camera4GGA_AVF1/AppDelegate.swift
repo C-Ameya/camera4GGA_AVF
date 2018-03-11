@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import AVFoundation
+import Photos
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

@@ -80,7 +80,7 @@ class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
         
         Setting?.unlockForConfiguration()
       } catch {
-        let alertController = UIAlertController(title: "Cheak", message: "False !!", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "Cheak", message: "False", preferredStyle: .alert)
         
         let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
         alertController.addAction(defaultAction)
